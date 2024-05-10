@@ -21,16 +21,30 @@ class UserInput(BaseModel):
 
 all_diabetic_friendly_foods = [
     {
-        "name": "Grilled Salmon",
-        "age_range": (30, 60),
-        "weight_range": (60, 90),
+        "name": "Turkey and Vegetable Skewers",
+        "age_range": (25, 55),
+        "weight_range": (55, 80),
         "sugar_level_range": (70, 120),
-        "cholesterol_range": (100, 180),
+        "cholesterol_range": (70, 160),
         "nutritional_info": {
-            "calories": 200,
-            "protein": 25,
-            "carbohydrates": 0,
-            "fiber": 0,
+            "calories": 160,
+            "protein": 20,
+            "carbohydrates": 5,
+            "fiber": 3,
+        }
+    },
+    {
+        "name": "Greek Salad with Chicken",
+        "age_range": (25, 55),
+        "weight_range": (55, 80),
+        "sugar_level_range": (70, 120),
+        "cholesterol_range": (70, 95),
+        "nutritional_info": {
+            "calories": 180,
+            "protein": 18,
+            "carbohydrates": 10,
+            "fiber": 4,
+            
         }
     },
     {
@@ -44,66 +58,259 @@ all_diabetic_friendly_foods = [
             "protein": 20,
             "carbohydrates": 5,
             "fiber": 3,
-            # Add more nutritional information as needed
+            
         }
     },
     {
-        "name": "Spinach and Mushroom Omelette",
-        "age_range": (20, 50),
-        "weight_range": (50, 75),
-        "sugar_level_range": (80, 110),
-        "cholesterol_range": (80, 140),
-        "nutritional_info": {
-            "calories": 150,
-            "protein": 12,
-            "carbohydrates": 5,
-            "fiber": 2,
-            # Add more nutritional information as needed
-        }
-    },
-    {
-        "name": "Grilled Asparagus",
-        "age_range": (25, 60),
-        "weight_range": (55, 85),
-        "sugar_level_range": (70, 120),
-        "cholesterol_range": (80, 150),
-        "nutritional_info": {
-            "calories": 30,
-            "protein": 3,
-            "carbohydrates": 5,
-            "fiber": 3,
-            # Add more nutritional information as needed
-        }
-    },
-    {
-        "name": "Cauliflower Rice Stir-Fry",
-        "age_range": (30, 65),
-        "weight_range": (60, 90),
-        "sugar_level_range": (75, 120),
-        "cholesterol_range": (90, 160),
+        "name": "Fruit Salad",
+        "age_range": (0, 100),
+        "weight_range": (80, 200),
+        "sugar_level_range": (20, 55),
+        "cholesterol_range": (78, 94),  # Assume fruits are cholesterol-free
         "nutritional_info": {
             "calories": 120,
-            "protein": 5,
-            "carbohydrates": 15,
+            "protein": 2,
+            "carbohydrates": 30,
             "fiber": 5,
-            # Add more nutritional information as needed
+            
         }
     },
     {
-        "name": "Greek Salad with Chicken",
-        "age_range": (25, 55),
-        "weight_range": (55, 80),
-        "sugar_level_range": (70, 120),
-        "cholesterol_range": (90, 160),
+        "name": " Jollof Rice",
+        "age_range": (0, 100),
+        "weight_range": (0, 200),
+        "sugar_level_range": (60, 80),
+        "cholesterol_range": (75, 94),  # Assume  Jollof Rice is cholesterol-free
         "nutritional_info": {
-            "calories": 180,
-            "protein": 18,
-            "carbohydrates": 10,
-            "fiber": 4,
-            # Add more nutritional information as needed
+            "calories": 250,
+            "protein": 6,
+            "carbohydrates": 45,
+            "fiber": 2,
+            
         }
     },
-    # Add more foods as needed
+    {
+        "name": "Apple",
+        "age_range": (0, 100),
+        "weight_range": (0, 500),
+        "sugar_level_range": (5, 60),
+        "cholesterol_range": (30, 94),
+        "nutritional_info": {
+            "calories": 95,
+            "protein": 1,
+            "carbohydrates": 25,
+            "fiber": 4,
+        }
+    },
+    {
+        "name": "Banana",
+        "age_range": (0, 100),
+        "weight_range": (0, 200),
+        "sugar_level_range": (20, 55),
+        "cholesterol_range": (30, 94),
+        "nutritional_info": {
+            "calories": 105,
+            "protein": 1,
+            "carbohydrates": 27,
+            "fiber": 3,
+        }
+    },
+    {
+        "name": "Orange",
+        "age_range": (0, 100),
+        "weight_range": (0, 300),
+        "sugar_level_range": (8, 12),
+        "cholesterol_range": (30, 94),
+        "nutritional_info": {
+            "calories": 62,
+            "protein": 1,
+            "carbohydrates": 15,
+            "fiber": 3,
+        }
+    },
+    {
+        "name": "Pineapple",
+        "age_range": (0, 100),
+        "weight_range": (0, 2000),
+        "sugar_level_range": (20, 55),
+        "cholesterol_range": (30, 94),
+        "nutritional_info": {
+            "calories": 50,
+            "protein": 0,
+            "carbohydrates": 13,
+            "fiber": 1,
+        }
+    },
+    {
+        "name": "Watermelon",
+        "age_range": (0, 100),
+        "weight_range": (0, 10000),
+        "sugar_level_range": (20, 55),
+        "cholesterol_range": (30, 94),
+        "nutritional_info": {
+            "calories": 30,
+            "protein": 1,
+            "carbohydrates": 8,
+            "fiber": 1,
+        }
+    },
+    {
+        "name": "Mango",
+        "age_range": (0, 100),
+        "weight_range": (0, 500),
+        "sugar_level_range": (20, 55),
+        "cholesterol_range": (30, 94),
+        "nutritional_info": {
+            "calories": 135,
+            "protein": 1,
+            "carbohydrates": 35,
+            "fiber": 5,
+        }
+    },
+    {
+        "name": "Papaya",
+        "age_range": (0, 100),
+        "weight_range": (0, 500),
+        "sugar_level_range": (20, 55),
+        "cholesterol_range": (30, 94),
+        "nutritional_info": {
+            "calories": 60,
+            "protein": 1,
+            "carbohydrates": 15,
+            "fiber": 3,
+        }
+    },
+    {
+        "name": "Guava",
+        "age_range": (0, 100),
+        "weight_range": (0, 500),
+        "sugar_level_range": (5, 12),
+        "cholesterol_range": (30, 94),
+        "nutritional_info": {
+            "calories": 38,
+            "protein": 1,
+            "carbohydrates": 9,
+            "fiber": 4,
+        }
+    },
+    {
+        "name": " Pounded Yam and Egusi Soup",
+        "age_range": (0, 100),
+        "weight_range": (0, 200),
+        "sugar_level_range": (1, 15),
+        "cholesterol_range": (30, 94),
+        "nutritional_info": {
+            "calories": 450,
+            "protein": 10,
+            "carbohydrates": 70,
+            "fiber": 5,
+        }
+    },
+    {
+        "name": " Suya",
+        "age_range": (0, 100),
+        "weight_range": (0, 200),
+        "sugar_level_range": (1, 10),
+        "cholesterol_range": (30, 94),
+        "nutritional_info": {
+            "calories": 350,
+            "protein": 20,
+            "carbohydrates": 5,
+            "fiber": 1,
+        }
+    },
+    {
+        "name": " Moi Moi",
+        "age_range": (0, 100),
+        "weight_range": (0, 200),
+        "sugar_level_range": (20, 80),
+        "cholesterol_range": (50, 94),
+        "nutritional_info": {
+            "calories": 100,
+            "protein": 8,
+            "carbohydrates": 15,
+            "fiber": 4,
+        }
+    },
+    {
+        "name": " Puff Puff",
+        "age_range": (0, 100),
+        "weight_range": (0, 200),
+        "sugar_level_range": (20, 80),
+        "cholesterol_range": (60, 94),
+        "nutritional_info": {
+            "calories": 90,
+            "protein": 2,
+            "carbohydrates": 15,
+            "fiber": 1,
+        }
+    },
+    {
+        "name": " Akara",
+        "age_range": (0, 100),
+        "weight_range": (0, 200),
+        "sugar_level_range": (20, 80),
+        "cholesterol_range": (75, 94),
+        "nutritional_info": {
+            "calories": 150,
+            "protein": 8,
+            "carbohydrates": 10,
+            "fiber": 2,
+        }
+    },
+    {
+        "name": " Fried Plantain",
+        "age_range": (0, 100),
+        "weight_range": (0, 200),
+        "sugar_level_range": (20, 80),
+        "cholesterol_range": (30, 94),
+        "nutritional_info": {
+            "calories": 200,
+            "protein": 1,
+            "carbohydrates": 50,
+            "fiber": 3,
+        }
+    },
+    {
+        "name": " Efo Riro",
+        "age_range": (0, 100),
+        "weight_range": (0, 200),
+        "sugar_level_range": (18, 80),
+        "cholesterol_range": (30, 94),
+        "nutritional_info": {
+            "calories": 300,
+            "protein": 10,
+            "carbohydrates": 20,
+            "fiber": 4,
+        }
+    },
+    {
+        "name": " Boli",
+        "age_range": (0, 100),
+        "weight_range": (0, 200),
+        "sugar_level_range": (20, 80),
+        "cholesterol_range": (70, 94),
+        "nutritional_info": {
+            "calories": 250,
+            "protein": 2,
+            "carbohydrates": 40,
+            "fiber": 3,
+        }
+    },
+    {
+        "name": " Amala and Ewedu Soup",
+        "age_range": (0, 100),
+        "weight_range": (0, 200),
+        "sugar_level_range": (20, 80),
+        "cholesterol_range": (30, 59),
+        "nutritional_info": {
+            "calories": 400,
+            "protein": 10,
+            "carbohydrates": 60,
+            "fiber": 5,
+        }
+    }
+
 ]
 
 def get_diabetic_friendly_suggestions(user_data):
